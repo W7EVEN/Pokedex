@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #262835;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pokelogo {
+  align-items: center;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.pokelogo .pokeball {
+  margin-right: 8px;
+}
+
+.pokelogo .pokespan {
+  color: #fff;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 37px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100vh;
+}
+
+.poketainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  position: relative;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  width: 290px;
+  height: 157px;
+  transition: 0.4s;
+  position: relative;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.sBox {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.sBox .cSearch {
+  background: transparent;
+  border: none;
+  color: #fff;
+  flex-grow: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  height: 100%;
+  line-height: 21px;
+  outline: none;
+}
+
+.box .pokeinfo {
+  flex-grow: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.box .pokeinfo .pokename {
+  color: #262835;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.box .pokeimagebox {
+  align-items: flex-end;
+  background-image: url("/assets/src/image/bolinhas.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  max-width: 110px;
+  padding-bottom: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.pokelement {
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 32px;
+  color: #262835;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  height: 16px;
+  justify-content: center;
+  line-height: 12px;
+  margin-bottom: 5px;
+  width: 55px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.csearch .pokesearch {
+  color: #fff;
+  cursor: pointer;
+}
